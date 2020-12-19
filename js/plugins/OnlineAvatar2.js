@@ -139,11 +139,7 @@ function Game_Avatar() {
 
 		try {
 			//firebase.initializeApp({apiKey: ps['apiKey'], authDomain: ps['authDomain'], databaseURL: ps['databaseURL']});
-			firebase.initializeApp({
-				apiKey: ps['apiKey'],
-				authDomain: ps['authDomain'],
-				databaseURL: ps['databaseURL'],
-				storageBucket: ps['storageBucket']});
+			firebase.initializeApp({apiKey: ps['apiKey'], authDomain: ps['authDomain'], databaseURL: ps['databaseURL'], storageBucket: ps['storageBucket']});
 		} catch(e) {
 			throw new Error('apiKeyが正しく設定されていません。ご確認ください。');
 		}
